@@ -1,0 +1,4 @@
+== SSO Rhomobile
+
+Single Sign On service for rhomobile applications.
+Contains all legacy users from Rhohub.com using oauth2.

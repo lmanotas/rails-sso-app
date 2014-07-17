@@ -2,5 +2,10 @@
 
 FactoryGirl.define do
   factory :user do
+  	email
+  	username
+  	api_token
+  	password "somevalidpassword"
+  	salt "123"
   end
 end

@@ -4,8 +4,8 @@ RSpec.describe PagesController, :type => :controller do
   context "not signed in" do
     it "should render sign_in if user isn't logged" do
       get 'index'
-      response.status.should == 302
-      response.should redirect_to new_user_session_path
+      expect(response.status).to eq(302)
+      expect(response).to redirect_to(new_user_session_path)
     end
   end
 
@@ -13,7 +13,7 @@ RSpec.describe PagesController, :type => :controller do
     it "should render index when the user is signed_in" do
       signed_in_user
       get 'index'
-      response.should render_template('index')
+      expect(response).to render_template('index')
     end
   end
 end

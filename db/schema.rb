@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140717220429) do
+ActiveRecord::Schema.define(version: 20140718181245) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -162,8 +162,8 @@ ActiveRecord::Schema.define(version: 20140717220429) do
     t.string   "uid",                       null: false
     t.string   "secret",                    null: false
     t.string   "redirect_uri", limit: 2048, null: false
-    t.datetime "created_at",                null: false
-    t.datetime "updated_at",                null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
   end
 
   add_index "oauth_applications", ["uid"], name: "index_oauth_applications_on_uid", unique: true, using: :btree

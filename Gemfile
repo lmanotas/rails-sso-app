@@ -5,6 +5,7 @@ gem 'jquery-rails', '~> 3.1.1'
 gem 'turbolinks', '~> 2.2.2'
 gem 'haml-rails', '~> 0.5.3'
 gem 'devise'
+gem 'doorkeeper'
 gem 'pg'
 
 group :test, :development do

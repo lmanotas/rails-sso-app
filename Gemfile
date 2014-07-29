@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.1.4'
-gem 'jquery-rails', '~> 3.1.1'
+gem 'uglifier'
+gem 'coffee-rails'
+gem 'jquery-rails'
 gem 'turbolinks', '~> 2.2.2'
 gem 'haml-rails', '~> 0.5.3'
 gem 'devise'

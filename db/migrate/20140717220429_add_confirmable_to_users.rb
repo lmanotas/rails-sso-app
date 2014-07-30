@@ -5,9 +5,5 @@ class AddConfirmableToUsers < ActiveRecord::Migration
       t.datetime :confirmation_sent_at
       t.string   :unconfirmed_email
     end
-
-    User.all.each do |u|
-      u.confirm! if u.email_confirmed?
-    end
   end
 end

@@ -5,7 +5,7 @@ default: &default
   port: <%= ENV["BOXEN_POSTGRESQL_PORT"] %>
   username: <%= ENV["USER"] %>
 
-staging:
+development:
   <<: *default
   database: sso_rhomobile_development
 

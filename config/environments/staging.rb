@@ -57,7 +57,7 @@ Rails.application.configure do
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   config.action_controller.asset_host = "https://#{ENV['FOG_DIRECTORY']}.s3.amazonaws.com"
-  config.action_mailer.default_url_options = { :host => 'gallerystaging.rhohub.com' }
+  config.action_mailer.default_url_options = { :host => 'accounts-staging.rhomobile.com' }
 
   # Precompile additional assets.
   # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.

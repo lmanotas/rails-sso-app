@@ -1,8 +1,8 @@
 class UsersController < ApplicationController
 
-  doorkeeper_for :me
+  doorkeeper_for :profile
 
-  def me
+  def profile
     render :json => current_resource_owner
   end
 

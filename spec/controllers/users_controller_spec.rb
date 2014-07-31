@@ -8,7 +8,7 @@ RSpec.describe UsersController, :type => :controller do
 
   context "Response" do
     it "should respond with the user information" do
-      get :me, :format => :json, :access_token => dk_token.token
+      get :profile, :format => :json, :access_token => dk_token.token
       expect(response.body).to eq(user.to_json)
     end
   end

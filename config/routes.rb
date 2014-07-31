@@ -6,4 +6,6 @@ Rails.application.routes.draw do
 
   root 'pages#index'
 
+  get '/me' => 'users#me'
+
 end

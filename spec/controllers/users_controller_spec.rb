@@ -6,10 +6,6 @@ RSpec.describe UsersController, :type => :controller do
   let(:dk_app) { FactoryGirl.create(:"Doorkeeper::Application") }
   let(:dk_token) { FactoryGirl.create(:"Doorkeeper::AccessToken", resource_owner_id: user.id, application_id: dk_app.id) }
 
-  before(:each) do
-    sign_in(user)
-  end
-
   context "Response" do
     it "should respond with the user information" do
       get :me, :format => :json, :access_token => dk_token.token
